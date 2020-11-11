@@ -96,7 +96,7 @@
       height: 20px;
     }
 
-    .logo>img {
+    .logo>picture>img {
       height: 100%;
     }
 
@@ -180,7 +180,11 @@
       <div class="nav">
         <div class="brand">
           <div class="logo">
-            <img src="/assets/logo.png" />
+            <picture>
+              <source srcset="/assets/logo.webp" type="image/webp">
+              <source srcset="/assets/logo.png" type="image/png">
+              <img src="/assets/logo.png" alt="Vscera" />
+            </picture>
           </div>
           <div class="title">Vscera</div>
         </div>
